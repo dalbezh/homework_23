@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 from marshmallow import ValidationError
 
+from constants import DATA_DIR
 from models import RequestSchema
 from utils import build_query
-from constants import DATA_DIR
 
 app = Flask(__name__)
 
